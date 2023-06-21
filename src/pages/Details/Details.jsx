@@ -2,14 +2,16 @@ import { Container } from "./styles"
 import { Button } from "../../components/Button/Button"
 
 export function Details() {
-// posso usar fragments tbm <> </> para subsituir a div
+  // posso usar fragments tbm <> </> para subsituir a div
 
   return (
-    <Container> 
+    <Container>
       <h1>Hello Word</h1>
       <span>Arthur</span>
 
-      <Button />
+      <Button title="Login" loading />
+      <Button title="Cadastrar" />
+      <Button title="Voltar" />
     </Container>
   )
 }
