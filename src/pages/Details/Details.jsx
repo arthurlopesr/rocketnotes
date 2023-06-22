@@ -26,6 +26,8 @@ export function Details() {
             <Links>
               <li>
                 <a href="#">https://www.rocketseat.com.br/</a>
+              </li>
+              <li>
                 <a href="#">https://www.rocketseat.com.br/</a>
               </li>
             </Links>
