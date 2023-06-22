@@ -1,4 +1,4 @@
-import { Container, Links } from "./styles"
+import { Container, Links, Content } from "./styles"
 import { Header } from "../../components/Header/Header"
 import { Button } from "../../components/Button/Button"
 import { ButtonText } from "../../components/ButtonText/ButtonText"
@@ -7,29 +7,39 @@ import { Tag } from "../../components/Tag/Tag"
 
 
 export function Details() {
-  // posso usar fragments tbm <> </> para subsituir a div
 
   return (
     <Container>
       <Header />
 
-      <ButtonText title={"Excluir nota"}/>
+      <main>
+        <Content>
+          <ButtonText title={"Excluir nota"} />
 
-      <Section title={"Links úteis"}>
-        <Links>
-          <li>
-            <a href="#">https://www.rocketseat.com.br/</a>
-            <a href="#">https://www.rocketseat.com.br/</a>
-          </li>
-        </Links>
-      </Section>
+          <h1>
+            Introdução ao React
+          </h1>
 
-      <Section title={"Marcadores"}>
-        <Tag title={"express"} />
-        <Tag title={"nodejs"} />
-      </Section>
+          <p>O React é uma biblioteca JavaScript declarativa, eficiente e flexível para criar interfaces com o usuário. Ele permite compor UIs complexas a partir de pequenos e isolados códigos chamados “componentes”.</p>
 
-      <Button title="Voltar" />
+          <Section title={"Links úteis"}>
+            <Links>
+              <li>
+                <a href="#">https://www.rocketseat.com.br/</a>
+                <a href="#">https://www.rocketseat.com.br/</a>
+              </li>
+            </Links>
+          </Section>
+
+          <Section title={"Marcadores"}>
+            <Tag title={"express"} />
+            <Tag title={"nodejs"} />
+          </Section>
+
+          <Button title="Voltar" />
+        </Content>
+      </main>
+
 
     </Container>
   )
