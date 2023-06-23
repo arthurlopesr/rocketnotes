@@ -36,6 +36,14 @@ export const Brand = styled.div`
 
 export const Menu = styled.ul`
     grid-area: menu;
+    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+
+    padding-top: 64px;
+    text-align: center;
+
+    > li { 
+        margin-bottom: 24px;
+    }
 
 `;
 
@@ -51,5 +59,12 @@ export const Content = styled.div`
 
 export const NewNote = styled.button`
     grid-area: newnote;
+    border: none;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: ${({ theme }) => theme.COLORS.ORANGE};
     
 `;
