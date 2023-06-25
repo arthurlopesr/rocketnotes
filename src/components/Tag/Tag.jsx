@@ -1,8 +1,8 @@
 import { Container } from './stlyes'
 
-export function Tag({ title }) {
+export function Tag({ title, ...props }) {
     return (
-        <Container>
+        <Container {...props}>
             {title}
         </Container>
     )
