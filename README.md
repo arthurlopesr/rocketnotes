@@ -25,3 +25,5 @@
 yarn dev | npm run dev
 ```
 A aplicação estará sendo executada em [http://localhost:5173/](http://localhost:5173/)\
+
+Com ❤️, Arthur
